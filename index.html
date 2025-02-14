@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet"  href="style.css">
+        <link rel="stylesheet"  href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Laurent Villemaire</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Laurent Villemaire</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./1724359920664.jpg" alt="Laurent Villemaire profile picture">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Bonjour, je m'appelle</p>
+                <h1 class="title">Laurent Villemaire</h1>
+                <p class="section__text__p2">Étudiant en développement web</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./Laurent_Villemaire_CV_.pdf')">Télécharger CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contactez moi</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./LinkedIn_icon.svg.png" alt="Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/laurent-villemaire-a3a71b197/'">
+                    <img src="./Octicons-mark-github.svg" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/laurentdev319'">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">En savoir plus</p>
+            <h1 class="title">À propos de moi</h1>
+            <div class="section-container">
+                <div class="section__pic-container-about">
+                    <img src="./476322080_1177190550434097_7728983632928436274_n.jpg" alt="Profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./223399.png" alt="Experience icon" class="icon-experience">
+                            <h3>Attestation d'études collégiales</h3>
+                            <p>AEC programme de programmeur-analyste-LEA.9C</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./223399.png" alt="Experience icon" class="icon-experience">
+                            <h3>Diplôme d'etude professionnelle</h3>
+                            <p>DEP programme d'électricité</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./223399.png" alt="Experience icon" class="icon-experience">
+                            <h3>Diplôme d'étude secondaire</h3>
+                            <p>DES</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Récemment diplômé d'un AEC en programmation Web, je suis 
+                            passionné par le développement et motivé à appliquer mes 
+                            connaissances en HTML, CSS, C#, PHP, JavaScript, Java et 
+                            Kotlin. Je recherche un poste stimulant qui me permettra 
+                            de mettre en pratique mes compétences et d'évoluer dans le 
+                            domaine de la programmation.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./double-arrow-down-512.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Voici mon</p>
+            <h1 class="title">Expérience</h1>
+            <p class="section__text__p1">Moyenne de 91%</p>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Développement Backend</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>C#</h3>
+                                    <p>420-TDD-ID</p>
+                                    <p>420-1NF-ID</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>PHP</h3>
+                                    <p>420-DCS-ID</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>420-PO1-ID</p>
+                                    <p>420-PO2-ID</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Kotlin</h3>
+                                    <p>420-DM1-ID</p>
+                                    <p>420-DM2-ID</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>420-BD1-ID</p>
+                                    <p>420-BD2-ID</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>Node</h3>
+                                    <p>420-NTE-ID</p>
+                                    <p>420-PP1-ID</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Développement Frontend</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>420-DW1-ID</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>420-DW1-ID</p>
+                                    <p>420-AWB-ID</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./checkmark-black-round-icon.png" alt="Checkmark icon" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>420-DW2-ID</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./double-arrow-down-512.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Parcourir mes derniers</p>
+            <h1 class="title">Projets</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./2241465.png" alt="Projet 1" class="project-img">
+                    </div>
+                    <p class="section__text__p1">Jeu de Tic Tac Toe</p>
+                    <h2 class="experience-sub-title project-title">Projet 1</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./acceil.PNG" alt="Projet 1" class="project-img">
+                    </div>
+                    <p class="section__text__p1">Système d'emprunt et de retour</p>
+                    <h2 class="experience-sub-title project-title">Projet 2</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Capture d’écran (18).png" alt="Projet 1" class="project-img">
+                    </div>
+                    <p class="section__text__p1">Gestion de marchandise et d'inventaire</p>
+                    <h2 class="experience-sub-title project-title">Projet 3</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <img src="./double-arrow-down-512.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Entrer en contact</p>
+            <h1 class="title">Contactez moi</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./email.png" alt="email" class="icon contact-icon">
+                    <p><a href="mailto:laurentvill19@outlook.com">laurentvill19@outlook.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./LinkedIn_icon.svg.png" alt="linkedin icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/laurent-villemaire-a3a71b197/">Linkedin</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#experience">Expérience</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025 Laurent Villemaire. All Rights Reserved</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
